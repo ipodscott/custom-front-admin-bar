@@ -1,21 +1,35 @@
-<?php if (current_user_can('level_10')){ ?>
+<?php if (current_user_can("level_10")) { ?>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-	<link href="<?php bloginfo('wpurl');?>/wp-includes/css/dashicons.min.css" rel="stylesheet">
-	
-	<div class="top-edit-menu">
-		<a data-title="Edit Page" class="edit-btn" href="<?php bloginfo('wpurl');?>/wp-admin/post.php?post=<?php the_ID(); ?>&action=edit"><span class="dashicons dashicons-welcome-write-blog"></span></a>
-		<a data-title="New Page" class="edit-btn" href="<?php bloginfo('wpurl');?>/wp-admin/post-new.php?post_type=page"><span class="dashicons dashicons-welcome-add-page"></span></a>
-		<a data-title="Pages" class="edit-btn" href="<?php bloginfo('wpurl');?>/wp-admin/edit.php?post_type=page"><span class="dashicons dashicons-admin-page"></span></a>
-		<a data-title="Reusable Blocks" class="edit-btn" href="<?php bloginfo('wpurl');?>/wp-admin/edit.php?post_type=wp_block"><span class="dashicons dashicons-controls-repeat"></span></a>
-		<a data-title="Dashboard" class="edit-btn" href="<?php bloginfo('wpurl');?>/wp-admin/"><span class="dashicons dashicons-dashboard"></span></a>
-		<?php if(function_exists("block_theme_setup")): ?>
-			<a data-title="Apperance Editor" class="edit-btn" href="<?php bloginfo('wpurl');?>/wp-admin/site-editor.php"><span class="dashicons dashicons-admin-appearance"></span></a>
-		<?php endif ?>
-	</div>	
+	<link href="<?php bloginfo(
+   "wpurl"
+ ); ?>/wp-includes/css/dashicons.min.css" rel="stylesheet">
 
-		
+	<div class="top-edit-menu">
+		<a data-title="Edit Page" class="edit-btn" href="<?php bloginfo(
+    "wpurl"
+  ); ?>/wp-admin/post.php?post=<?php the_ID(); ?>&action=edit"><span class="dashicons dashicons-welcome-write-blog"></span></a>
+		<a data-title="New Page" class="edit-btn" href="<?php bloginfo(
+    "wpurl"
+  ); ?>/wp-admin/post-new.php?post_type=page"><span class="dashicons dashicons-welcome-add-page"></span></a>
+		<a data-title="Pages" class="edit-btn" href="<?php bloginfo(
+    "wpurl"
+  ); ?>/wp-admin/edit.php?post_type=page"><span class="dashicons dashicons-admin-page"></span></a>
+		<a data-title="Reusable Blocks" class="edit-btn" href="<?php bloginfo(
+    "wpurl"
+  ); ?>/wp-admin/edit.php?post_type=wp_block"><span class="dashicons dashicons-controls-repeat"></span></a>
+		<a data-title="Dashboard" class="edit-btn" href="<?php bloginfo(
+    "wpurl"
+  ); ?>/wp-admin/"><span class="dashicons dashicons-dashboard"></span></a>
+		<?php if (function_exists("block_theme_setup")): ?>
+			<a data-title="Apperance Editor" class="edit-btn" href="<?php bloginfo(
+     "wpurl"
+   ); ?>/wp-admin/site-editor.php"><span class="dashicons dashicons-admin-appearance"></span></a>
+		<?php endif; ?>
+	</div>
+
+
 	<style type="text/css">
 	.top-edit-menu {
 		font-family: "Lato", sans-serif;
@@ -23,7 +37,7 @@
 		align-items: center;
 		justify-content: center;
 		position: fixed;
-		top: -46px;
+		top: -44px;
 		width: calc(100% - 40px);
 		left: 20px;
 		text-align: center;
@@ -50,22 +64,23 @@
 		color: #fff !important;
 		text-decoration: none !important;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		justify-content: center !important;
+		align-items: center !important;
 		top: 0;
 		left: 0;
+		padding: 0 !important;
 		background-color: #000;
 		transition: all 0.5s;
 		-webkit-box-shadow: 0 0 5px #000;
 		border-style: solid;
 		border-width: 0 1px 1px 1px;
 		border-color: #999;
-		text-align: center;
-		height: 45px;
-		text-align: center;
+		height: 42px !important;
 		opacity: 0.8;
 		transition: all 0.5s;
 		cursor: pointer;
+		line-height: 1em;
+		width: 42px !important;
 	}
 	.edit-btn:hover {
 		opacity: 1;
@@ -80,16 +95,13 @@
 		text-decoration: none;
 		color: #fff;
 	}
+
 	.edit-btn .dashicons {
-		display: block;
-		position: relative;
-		margin: 0 auto;
-		color: #ccc;
+		display: inline-block !important;
 		font-size: 24px;
-		width: auto;
-		padding: 8px 10px 15px 10px;
-		white-space: nowrap;
-		cursor: pointer;
+		line-height: 0.75em !important;
+		margin: 0 !important;
+		padding: 0 !important;
 	}
 	[data-title]:hover:after {
 		opacity: 1;
@@ -126,4 +138,4 @@
 
 	</style>
 
-<?php } ?>	
+<?php } ?>	 ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?> ?>
