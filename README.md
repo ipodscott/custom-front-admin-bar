@@ -8,6 +8,6 @@ The default links are:
 - Pages
 - Reusable Blocks
 - Dashboard
-- * **New** * - Shows the Apperance Editor for WordPress 6 if the theme is set up for full site editing.
+-  **New !!!**  - Now shows the Apperance Editor for WordPress 6 if the theme is set up for full site editing.
 
 ![Custom Admin Bar](https://www.hazzardlabs.com/images/admin-bar.png)
