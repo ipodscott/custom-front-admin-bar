@@ -25,11 +25,10 @@
 		<a data-title="Dashboard" class="edit-btn" href="<?php bloginfo(
     "wpurl"
   ); ?>/wp-admin/"><span class="dashicons dashicons-dashboard"></span></a>
-		<?php if (function_exists("block_theme_setup")): ?>
-			<a data-title="Apperance Editor" class="edit-btn" href="<?php bloginfo(
+		<a data-title="Apperance Editor" class="edit-btn" href="<?php bloginfo(
      "wpurl"
    ); ?>/wp-admin/site-editor.php"><span class="dashicons dashicons-admin-appearance"></span></a>
-		<?php endif; ?>
+	
 	</div>
 
 
