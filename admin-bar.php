@@ -1,7 +1,7 @@
 <?php 
 	
 		
-	if ( current_user_can( "level_10" ) && ( ! is_admin_bar_showing() ) )  { ?>
+	if ( current_user_can( "administrator" ) && ( ! is_admin_bar_showing() ) || current_user_can( "editor" ) && ( ! is_admin_bar_showing() )  )  { ?>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
